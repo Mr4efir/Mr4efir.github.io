@@ -184,15 +184,16 @@ nav li {
     line-height: 1.6;
 }
 
-.myth-image {
+.image-container {
     display: block;
     margin: 0 auto 20px;
-    max-width: 100%;
-    height: auto;
+    width: 300px; /* Фиксированная ширина */
+    height: 200px; /* Фиксированная высота */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
     border-radius: 8px;
 }
 
 .spacer {
     height: 20px;
 }
-
