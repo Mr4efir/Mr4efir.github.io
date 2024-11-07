@@ -187,8 +187,8 @@ nav li {
 .image-container {
     display: block;
     margin: 0 auto 20px;
-    width: 300px; /* Фиксированная ширина */
-    height: 200px; /* Фиксированная высота */
+    width: 600px; /* Увеличенная ширина */
+    height: 400px; /* Увеличенная высота */
     background-size: cover; /* Сохранение пропорций изображения */
     background-position: center; /* Центрирование изображения */
     border-radius: 8px;
