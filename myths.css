@@ -149,10 +149,6 @@ nav li {
 .btn-1:focus {
 	outline: none;
 }
-.scroll {
-  height: 200px; 
-  overflow-y: scroll; 
-}
 html {
 scroll-behavior: smotch;
 }
