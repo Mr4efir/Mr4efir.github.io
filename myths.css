@@ -3,18 +3,23 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto; /* Изменено на auto для включения вертикального скроллинга */
+    overflow-y: auto; /* Включение вертикального скроллинга */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     text-align: center;
     position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -31,8 +36,8 @@ nav li {
     cursor: pointer;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-family: Marvel;
-    font-size: 20pt;
+    font-family: Marvel, sans-serif;
+    font-size: 16pt;
     width: 200px;
     height: 45px;
     position: relative;
@@ -43,6 +48,8 @@ nav li {
     border-radius: 5px;
     background: transparent;
     padding: 0;
+    text-align: center;
+    line-height: 45px;
 }
 
 .btn-1 span {
@@ -150,10 +157,42 @@ nav li {
     outline: none;
 }
 
-.layer {
-    overflow: auto; /* Изменено на auto для включения скроллинга */
-    width: 100%; /* Изменено на 100% для полной ширины контейнера */
-    height: 150px;
-    padding: 5px;
-    border: solid 1px black;
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.layer {
+    overflow: auto; /* Включение скроллинга */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.layer h2, .layer h3, .layer h4 {
+    margin-bottom: 10px;
+}
+
+.layer p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.myth-image {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.spacer {
+    height: 20px;
+}
+
