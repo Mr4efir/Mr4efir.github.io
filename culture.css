@@ -187,8 +187,8 @@ nav li {
 .culture-image {
     display: block;
     margin: 0 auto 20px;
-    width: 300px; /* Фиксированная ширина */
-    height: 200px; /* Фиксированная высота */
+    width: 600px; /* Фиксированная ширина */
+    height: 400px; /* Фиксированная высота */
     object-fit: cover; /* Сохранение пропорций изображения */
     border-radius: 8px;
 }
