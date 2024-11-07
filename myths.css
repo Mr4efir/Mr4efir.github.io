@@ -149,6 +149,10 @@ nav li {
 .btn-1:focus {
 	outline: none;
 }
-.scroll {
-  height: 200px; 
-  overflow-y: scroll; 
+.layer {
+    overflow: scroll; 
+    width: 300px; 
+    height: 150px;
+    padding: 5px; 
+    border: solid 1px blacck;
+   } 
