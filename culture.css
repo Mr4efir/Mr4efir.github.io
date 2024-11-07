@@ -184,12 +184,13 @@ nav li {
     line-height: 1.6;
 }
 
-.culture-image {
+.image-container {
     display: block;
     margin: 0 auto 20px;
-    width: 600px; /* Фиксированная ширина */
-    height: 400px; /* Фиксированная высота */
-    object-fit: cover; /* Сохранение пропорций изображения */
+    width: 600px; /* Увеличенная ширина */
+    height: 400px; /* Увеличенная высота */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
     border-radius: 8px;
 }
 
