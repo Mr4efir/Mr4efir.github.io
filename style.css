@@ -1,156 +1,217 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Включение вертикального скроллинга */
+    background-color: #313131;
     color: #333;
+    background-image: url('background.jpg'); /* Фоновое изображение для всей страницы */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
+    background-attachment: fixed; /* Фиксированное положение фона */
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    text-align: center;
     position: relative;
-    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 2;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #555;
-    border-radius: 5px;
-}
-
-.auth-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.registration-form, .login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.registration-form label, .login-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.registration-form input, .login-form input {
-    margin-bottom: 10px;
-    padding: 8px;
-    width: 100%;
-    max-width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+nav li {
+    margin: 0;
 }
 
 .btn-1 {
-    background: #888; /* Серый цвет */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn-1:hover {
-    background: #555; /* Темный серый цвет */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Marvel, sans-serif;
+    font-size: 20pt;
+    width: 200px;
+    height: 45px;
+    position: relative;
+    border: solid #777 2px;
+    color: #777;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    line-height: 45px;
 }
 
 .btn-1 span {
     position: relative;
-    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    transition: 0.5s ease-in-out;
 }
 
-.btn-1::before {
-    content: '';
+.btn-1:before, .btn-1:after {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #838181;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-1:before {
+    height: 0%;
+    width: 2px;
+    top: 50%;
+}
+
+.btn-1:after {
+    width: 0%;
+    height: 2px;
+    left: 50%;
+}
+
+.btn-1:hover:before {
     height: 100%;
-    background: #555; /* Темный серый цвет */
-    border-radius: 5px;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s;
-    z-index: 0;
+    top: 0%;
+    background: #838181;
 }
 
-.btn-1:hover::before {
-    transform: scaleX(1);
-}
-
-.background-container {
-    position: fixed; /* Фиксированный фон */
-    top: 0;
-    left: 0;
+.btn-1:hover:after {
     width: 100%;
-    height: 100%;
-    background: url('phon.jpg') no-repeat center center/cover;
-    z-index: -1;
+    left: 0%;
+    background: #838181;
 }
 
-main {
-    padding: 20px;
+.btn-1:hover {
+    background: transparent;
+    border-color: transparent;
 }
 
-#home {
-    text-align: center;
-    padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.btn-1 span:hover {
+    color: #838181;
 }
 
-#home h1 {
-    margin-bottom: 20px;
+.btn-1 span:before, .btn-1 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #333;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-1 span:before {
+    width: 2px;
+    height: 0%;
+    top: 50%;
+}
+
+.btn-1 span:after {
+    height: 2px;
+    width: 0%;
+    left: 50%;
+}
+
+.btn-1 span:hover:before {
+    height: 41px;
+    top: 0%;
+    background: #838181;
+}
+
+.btn-1 span:hover:after {
+    width: 100%;
+    left: 0%;
+    background: #838181;
+}
+
+.btn-1:active {
+    background-color: #00a7fc;
+    border-color: #00a7fc;
+}
+
+.btn-1:active:before, .btn-1:active:after {
+    background-color: #00a7fc;
+}
+
+.btn-1 span:active {
+    color: #333;
+}
+
+.btn-1 span:active:before, .btn-1 span:active:after {
+    background-color: #00a7fc;
+}
+
+.btn-1:focus {
+    outline: none;
 }
 
 .container {
-    max-width: 800px;
+    padding: 20px;
+    max-width: 1200px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .scroll {
-    margin-top: 20px;
+    overflow: auto; /* Включение скроллинга */
+    width: 100%;
+    height: auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: solid 1px #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .scroll h2 {
     margin-bottom: 10px;
+}
+
+.scroll p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.image-container {
+    display: block;
+    margin: 0 auto 20px;
+    width: 600px; /* Увеличенная ширина */
+    height: 400px; /* Увеличенная высота */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
+    border-radius: 8px;
+}
+
+.spacer {
+    height: 20px;
+}
+.background-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('phon.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
