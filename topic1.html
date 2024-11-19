@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История викингов</title>
+    <link rel="stylesheet" href="topic1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-1">Домой</a></li>
+                <li><a href="myths.html" class="btn-1">Миры</a></li>
+                <li><a href="#about" class="btn-1">О нас</a></li>
+                <li><a href="culture.html" class="btn-1">Культура</a></li>
+                <li><a href="person.html" class="btn-1">Боги</a></li>
+                <li><a href="forum.html" class="btn-1">Форум</a></li>
+            </ul>
+        </nav>
+        <div class="background-container">
+        </div>
+    </header>
+    <main>
+        <section id="topic1">
+            <h1>История викингов</h1>
+            <div class="topic-content">
+                <h2>Введение</h2>
+                <p>Викинги — это скандинавские воины, моряки и торговцы, которые жили в период с VIII по XI века. Они известны своими набегами и завоеваниями, а также своими навыками мореплавания и торговли.</p>
+                <h2>Эпоха викингов</h2>
+                <p>Эпоха викингов началась в конце VIII века с набегов на монастыри и поселения в Европе. Викинги быстро расширили свои территории, достигнув Британских островов, Франции, Исландии, Гренландии и даже Северной Америки.</p>
+                <h2>Культура и общество</h2>
+                <p>Викинги имели сложную социальную структуру, включающую королей, ярлов, воинов и крестьян. Их культура была богата мифами и легендами, а религия включала поклонение множеству богов, таких как Один, Тор и Фрейя.</p>
+                <h2>Наследие викингов</h2>
+                <p>Наследие викингов можно видеть в современной культуре, языке и генетике многих европейских народов. Их влияние на историю и культуру Европы было значительным и продолжает изучаться историками и археологами.</p>
+            </div>
+            <div class="comments">
+                <h2>Комментарии</h2>
+                <form action="submit_comment.php" method="post">
+                    <label for="comment-name">Ваше имя:</label>
+                    <input type="text" id="comment-name" name="comment-name" required>
+                    <label for="comment-text">Ваш комментарий:</label>
+                    <textarea id="comment-text" name="comment-text" rows="4" required></textarea>
+                    <button type="submit" class="btn-1">Отправить комментарий</button>
+                </form>
+                <div class="comment-list">
+                    <h3>Комментарии пользователей</h3>
+                    <ul>
+                        <li>
+                            <p><strong>Иван:</strong> Интересная статья! Спасибо за информацию.</p>
+                        </li>
+                        <li>
+                            <p><strong>Мария:</strong> Хотелось бы узнать больше о их кораблях.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
 
