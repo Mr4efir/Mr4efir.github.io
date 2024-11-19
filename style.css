@@ -215,3 +215,114 @@ nav li {
     justify-content: center;
     align-items: center;
 }
+.auth-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.registration-form, .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label, .login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-form input, .login-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-1 {
+    background: #888; /* Серый цвет */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-1:hover {
+    background: #555; /* Темный серый цвет */
+}
+
+.btn-1 span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #555; /* Темный серый цвет */
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+    z-index: 0;
+}
+
+.btn-1:hover::before {
+    transform: scaleX(1);
+}
+
+.background-container {
+    position: fixed; /* Фиксированный фон */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('phon.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+main {
+    padding: 20px;
+}
+
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.scroll {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scroll h2 {
+    margin-bottom: 10px;
+}
