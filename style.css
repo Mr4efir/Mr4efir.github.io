@@ -248,6 +248,7 @@ nav li {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 3;
 }
 
 .registration-form, .login-form {
