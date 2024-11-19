@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,7 +53,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -74,7 +74,7 @@ nav ul li a:hover {
 }
 
 .btn-1 {
-    background: #007BFF;
+    background: #888; /* Серый цвет */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -84,7 +84,7 @@ nav ul li a:hover {
 }
 
 .btn-1:hover {
-    background: #0056b3;
+    background: #555; /* Темный серый цвет */
 }
 
 .btn-1 span {
@@ -99,7 +99,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0056b3;
+    background: #555; /* Темный серый цвет */
     border-radius: 5px;
     transform: scaleX(0);
     transform-origin: left;
@@ -112,7 +112,7 @@ nav ul li a:hover {
 }
 
 .background-container {
-    position: absolute;
+    position: fixed; /* Фиксированный фон */
     top: 0;
     left: 0;
     width: 100%;
