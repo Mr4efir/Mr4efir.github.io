@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -123,5 +124,93 @@ nav li {
 }
 
 .btn-1 span:after {
-    height: 2
+    height: 2px;
+    width: 0%;
+    left: 50%;
+}
+
+.btn-1 span:hover:before {
+    height: 41px;
+    top: 0%;
+    background: #838181;
+}
+
+.btn-1 span:hover:after {
+    width: 100%;
+    left: 0%;
+    background: #838181;
+}
+
+.btn-1:active {
+    background-color: #00a7fc;
+    border-color: #00a7fc;
+}
+
+.btn-1:active:before, .btn-1:active:after {
+    background-color: #00a7fc;
+}
+
+.btn-1 span:active {
+    color: #333;
+}
+
+.btn-1 span:active:before, .btn-1 span:active:after {
+    background-color: #00a7fc;
+}
+
+.btn-1:focus {
+    outline: none;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll {
+    overflow: auto; /* Включение скроллинга */
+    height: auto;
+    padding: 20px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll h2 {
+    margin-bottom: 10px;
+}
+
+.scroll p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.image-container {
+    display: block;
+    margin: 0 auto 20px;
+    width: 600px; /* Увеличенная ширина */
+    height: 400px; /* Увеличенная высота */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
+    border-radius: 8px;
+}
+
+.spacer {
+    height: 20px;
+}
+.background-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('phon.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
