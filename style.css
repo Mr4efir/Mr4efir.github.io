@@ -6,6 +6,10 @@ body {
     overflow-y: auto; /* Включение вертикального скроллинга */
     background-color: #313131;
     color: #333;
+    background-image: url('background.jpg'); /* Фоновое изображение для всей страницы */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
+    background-attachment: fixed; /* Фиксированное положение фона */
 }
 
 header {
@@ -14,20 +18,6 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-}
-
-.loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498d8;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 nav ul {
@@ -175,11 +165,13 @@ nav li {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.layer {
+.scroll {
     overflow: auto; /* Включение скроллинга */
-    width: 100%;
     height: auto;
     padding: 20px;
     border: solid 1px #ccc;
@@ -189,11 +181,11 @@ nav li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.layer h2, .layer h3, .layer h4 {
+.scroll h2 {
     margin-bottom: 10px;
 }
 
-.layer p {
+.scroll p {
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -223,44 +215,17 @@ nav li {
     align-items: center;
 }
 
-.character {
-    position: relative;
-    bottom: 20%;
-    right: 10%;
-    max-width: 20%;
-    height: auto;
-    opacity: 0.2;
-    z-index: 1;
-    animation: slideIn 1s ease-out forwards;
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.content {
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 100vh;
-}
-
 .auth-container {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 1000;
 }
 
 .registration-form, .login-form {
-    display: flex;
-    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 8px;
@@ -296,4 +261,14 @@ nav li {
 .registration-form button:focus, .login-form button:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
