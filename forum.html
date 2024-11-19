@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум о Скандинавии</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-1">Домой</a></li>
+                <li><a href="myths.html" class="btn-1">Миры</a></li>
+                <li><a href="#about" class="btn-1">О нас</a></li>
+                <li><a href="culture.html" class="btn-1">Культура</a></li>
+                <li><a href="person.html" class="btn-1">Боги</a></li>
+                <li><a href="forum.html" class="btn-1">Форум</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="forum">
+            <h1>Форум о Скандинавии</h1>
+            <div class="forum-topics">
+                <h2>Темы форума</h2>
+                <ul>
+                    <li>
+                        <h3>История викингов</h3>
+                        <p>Обсуждение истории викингов, их завоеваний и культуры.</p>
+                        <a href="topic1.html" class="btn-1">Перейти к теме</a>
+                    </li>
+                    <li>
+                        <h3>Скандинавская мифология</h3>
+                        <p>Обсуждение богов, мифов и легенд скандинавской мифологии.</p>
+                        <a href="topic2.html" class="btn-1">Перейти к теме</a>
+                    </li>
+                    <li>
+                        <h3>Современная Скандинавия</h3>
+                        <p>Обсуждение современной жизни и культуры в странах Скандинавии.</p>
+                        <a href="topic3.html" class="btn-1">Перейти к теме</a>
+                    </li>
+                    <li>
+                        <h3>Языки и литература</h3>
+                        <p>Обсуждение скандинавских языков и литературы.</p>
+                        <a href="topic4.html" class="btn-1">Перейти к теме</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="new-topic">
+                <h2>Создать новую тему</h2>
+                <form action="submit_topic.php" method="post">
+                    <label for="topic-title">Название темы:</label>
+                    <input type="text" id="topic-title" name="topic-title" required>
+                    <label for="topic-description">Описание темы:</label>
+                    <textarea id="topic-description" name="topic-description" rows="4" required></textarea>
+                    <button type="submit" class="btn-1">Создать тему</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Форум о Скандинавии. Все права защищены.</p>
+    </footer>
+</body>
+</html>
 
