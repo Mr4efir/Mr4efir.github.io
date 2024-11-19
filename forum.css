@@ -4,7 +4,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     overflow-y: auto; /* Включение вертикального скроллинга */
-    background-color: #f4f4f4;
+    background-color: #313131;
     color: #333;
     background-image: url('background.jpg'); /* Фоновое изображение для всей страницы */
     background-size: cover; /* Сохранение пропорций изображения */
@@ -289,6 +289,85 @@ nav li {
 }
 
 .new-topic button:hover {
+    background-color: #555;
+}
+
+#registration {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон для формы регистрации */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#registration h2 {
+    margin-bottom: 10px;
+}
+
+#registration form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#registration form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registration form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registration form button:hover {
+    background-color: #555;
+}
+
+#login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#login h2 {
+    margin-bottom: 10px;
+}
+
+#login form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login form button:hover {
     background-color: #555;
 }
 
