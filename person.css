@@ -204,3 +204,13 @@ nav li {
 .spacer {
     height: 20px;
 }
+.background-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('phon.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
