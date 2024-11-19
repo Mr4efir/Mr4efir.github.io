@@ -203,6 +203,7 @@ nav li {
 .spacer {
     height: 20px;
 }
+
 .background-container {
     position: relative;
     height: 100vh;
@@ -214,3 +215,89 @@ nav li {
     align-items: center;
 }
 
+.forum-topics {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.forum-topics ul {
+    list-style: none;
+    padding: 0;
+}
+
+.forum-topics ul li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.forum-topics ul li h3 {
+    margin: 0;
+}
+
+.forum-topics ul li p {
+    margin: 10px 0;
+}
+
+.forum-topics ul li a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.forum-topics ul li a:hover {
+    background-color: #555;
+}
+
+.new-topic {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.new-topic label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.new-topic input, .new-topic textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.new-topic button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-topic button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
