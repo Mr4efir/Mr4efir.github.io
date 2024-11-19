@@ -6,6 +6,10 @@ body {
     overflow-y: auto; /* Включение вертикального скроллинга */
     background-color: #f4f4f4;
     color: #333;
+    background-image: url('background.jpg'); /* Фоновое изображение для всей страницы */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
+    background-attachment: fixed; /* Фиксированное положение фона */
 }
 
 header {
@@ -19,7 +23,7 @@ header {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -37,7 +41,7 @@ nav li {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: Marvel, sans-serif;
-    font-size: 16pt;
+    font-size: 20pt;
     width: 200px;
     height: 45px;
     position: relative;
@@ -161,9 +165,12 @@ nav li {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.layer {
+.scroll {
     overflow: auto; /* Включение скроллинга */
     width: 100%;
     height: auto;
@@ -175,11 +182,11 @@ nav li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.layer h2, .layer h3, .layer h4 {
+.scroll h2 {
     margin-bottom: 10px;
 }
 
-.layer p {
+.scroll p {
     margin-bottom: 20px;
     line-height: 1.6;
 }
