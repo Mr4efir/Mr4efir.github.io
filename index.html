@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
+    <link 
 </head>
 <body>
     <div class="loader" id = "loader"></div>
@@ -27,6 +28,13 @@
     <main>
     
     </main>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener("load",function() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        });
+    });
+</script>
 </body>
 </html>
