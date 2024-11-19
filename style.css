@@ -297,18 +297,6 @@ main {
     padding: 20px;
 }
 
-#home {
-    text-align: center;
-    padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#home h1 {
-    margin-bottom: 20px;
-}
 
 .container {
     max-width: 800px;
