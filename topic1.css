@@ -6,7 +6,6 @@ body {
     overflow-y: auto; /* Включение вертикального скроллинга */
     background-color: #313131;
     color: #333;
-    background-image: url('background.jpg'); /* Фоновое изображение для всей страницы */
     background-size: cover; /* Сохранение пропорций изображения */
     background-position: center; /* Центрирование изображения */
     background-attachment: fixed; /* Фиксированное положение фона */
