@@ -1,21 +1,20 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto; /* Включение вертикального скроллинга */
+    overflow-y: auto; 
+    background-color: #ffffff;
     color: #333;
-    background-image: url('background.jpg'); /* Фоновое изображение для всей страницы */
-    background-size: cover; /* Сохранение пропорций изображения */
-    background-position: center; /* Центрирование изображения */
-    background-attachment: fixed; /* Фиксированное положение фона */
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
 }
 
 header {
     text-align: center;
     position: relative;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.7);
     color: #fff;
     padding: 20px 0;
 }
@@ -27,7 +26,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position: relative;
     z-index: 2;
 }
@@ -161,55 +160,67 @@ nav li {
     outline: none;
 }
 
-.container {
+.forum-container {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.scroll {
-    overflow: auto; /* Включение скроллинга */
-    height: auto;
-    padding: 20px;
-    border: solid 1px #ccc;
     background-color: #fff;
-    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.scroll h2 {
+.forum-posts {
+    margin-bottom: 20px;
+}
+
+.forum-post {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.forum-post h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #777;
     margin-bottom: 10px;
 }
 
-.scroll p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.image-container {
-    display: block;
-    margin: 0 auto 20px;
-    width: 600px; /* Увеличенная ширина */
-    height: 400px; /* Увеличенная высота */
-    background-size: cover; /* Сохранение пропорций изображения */
-    background-position: center; /* Центрирование изображения */
+.forum-form {
+    background-color: #f9f9f9;
+    padding: 20px;
     border-radius: 8px;
 }
 
-.spacer {
-    height: 20px;
+.forum-form h2 {
+    margin-top: 0;
 }
-.background-container {
-    position: relative;
-    height: 100vh;
-    background-image: url('phon.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.forum-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.forum-form input, .forum-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forum-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forum-form button:hover {
+    background-color: #555;
 }

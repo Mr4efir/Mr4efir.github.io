@@ -3,73 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>История викингов</title>
+    <title>Форум</title>
     <link rel="stylesheet" href="topic1.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" class="btn-1"><span>Домой</span></a></li>
-                <li><a href="myths.html" class="btn-1"><span>Миры</span></a></li>
-                <li><a href="#about" class="btn-1"><span>О нас</span></a></li>
-                <li><a href="culture.html" class="btn-1"><span>Культура</span></a></li>
-                <li><a href="person.html" class="btn-1"><span>Боги</span></a></li>
-                <li><a href="forum.html" class="btn-1"><span>Форум</span></a></li>
+                <li><a href="index.html" class="btn-1">Домой</a></li>
+                <li><a href="myths.html" class="btn-1">Миры</a></li>
+                <li><a href="#about" class="btn-1">О нас</a></li>
+                <li><a href="culture.html" class="btn-1">Культура</a></li>
+                <li><a href="person.html" class="btn-1">Боги</a></li>
+                <li><a href="forum.html" class="btn-1">Форум</a></li>
             </ul>
         </nav>
-        <div class="auth-container">
-            <form action="register.php" method="post" class="registration-form">
-                <label for="reg-name">Имя:</label>
-                <input type="text" id="reg-name" name="reg-name" required>
-                <label for="reg-email">Email:</label>
-                <input type="email" id="reg-email" name="reg-email" required>
-                <button type="submit" class="btn-1"><span>Зарегистрироваться</span></button>
-            </form>
-            <form action="login.php" method="post" class="login-form">
-                <label for="login-email">Email:</label>
-                <input type="email" id="login-email" name="login-email" required>
-                <label for="login-password">Пароль:</label>
-                <input type="password" id="login-password" name="login-password" required>
-                <button type="submit" class="btn-1"><span>Войти</span></button>
-            </form>
-        </div>
     </header>
-    <main>
-        <section id="topic1">
-            <h1>История викингов</h1>
-            <div class="topic-content">
-                <h2>Введение</h2>
-                <p>Викинги — это скандинавские воины, моряки и торговцы, которые жили в период с VIII по XI века. Они известны своими набегами и завоеваниями, а также своими навыками мореплавания и торговли.</p>
-                <h2>Эпоха викингов</h2>
-                <p>Эпоха викингов началась в конце VIII века с набегов на монастыри и поселения в Европе. Викинги быстро расширили свои территории, достигнув Британских островов, Франции, Исландии, Гренландии и даже Северной Америки.</p>
-                <h2>Культура и общество</h2>
-                <p>Викинги имели сложную социальную структуру, включающую королей, ярлов, воинов и крестьян. Их культура была богата мифами и легендами, а религия включала поклонение множеству богов, таких как Один, Тор и Фрейя.</p>
-                <h2>Наследие викингов</h2>
-                <p>Наследие викингов можно видеть в современной культуре, языке и генетике многих европейских народов. Их влияние на историю и культуру Европы было значительным и продолжает изучаться историками и археологами.</p>
-            </div>
-            <div class="comments">
-                <h2>Комментарии</h2>
-                <form action="submit_comment.php" method="post">
-                    <label for="comment-name">Ваше имя:</label>
-                    <input type="text" id="comment-name" name="comment-name" required>
-                    <label for="comment-text">Ваш комментарий:</label>
-                    <textarea id="comment-text" name="comment-text" rows="4" required></textarea>
-                    <button type="submit" class="btn-1"><span>Отправить комментарий</span></button>
-                </form>
-                <div class="comment-list">
-                    <h3>Комментарии пользователей</h3>
-                    <ul>
-                        <li>
-                            <p><strong>Иван:</strong> Интересная статья! Спасибо за информацию.</p>
-                        </li>
-                        <li>
-                            <p><strong>Мария:</strong> Хотелось бы узнать больше о их кораблях.</p>
-                        </li>
-                    </ul>
+
+    <div class="forum-container">
+        <h1>Форум</h1>
+
+        <div class="forum-posts">
+            <div class="forum-post">
+                <h2>Тема 1: Обсуждение миров</h2>
+                <p class="post-meta">Автор: Иван Иванов | Дата: 2023-10-01</p>
+                <p>Здесь можно обсудить различные миры и их особенности.</p>
+
+                <div class="comments">
+                    <h3>Комментарии</h3>
+                    <div class="comment">
+                        <p class="comment-meta">Автор: Петр Петров | Дата: 2023-10-02</p>
+                        <p>Интересная тема! У меня есть несколько вопросов.</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-meta">Автор: Анна Сидорова | Дата: 2023-10-03</p>
+                        <p>Я согласна с Петром, хотелось бы узнать больше.</p>
+                    </div>
+
+                    <div class="comment-form">
+                        <h4>Добавить комментарий</h4>
+                        <form action="#" method="post">
+                            <label for="comment-author">Ваше имя:</label>
+                            <input type="text" id="comment-author" name="comment-author" required>
+
+                            <label for="comment-content">Комментарий:</label>
+                            <textarea id="comment-content" name="comment-content" rows="3" required></textarea>
+
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <div class="forum-post">
+                <h2>Тема 2: Культура и традиции</h2>
+                <p class="post-meta">Автор: Мария Петрова | Дата: 2023-10-02</p>
+                <p>Обсуждаем культуру и традиции разных миров.</p>
+
+                <div class="comments">
+                    <h3>Комментарии</h3>
+                    <div class="comment">
+                        <p class="comment-meta">Автор: Олег Олегов | Дата: 2023-10-03</p>
+                        <p>Очень интересная тема! У меня есть несколько вопросов.</p>
+                    </div>
+
+                    <div class="comment-form">
+                        <h4>Добавить комментарий</h4>
+                        <form action="#" method="post">
+                            <label for="comment-author">Ваше имя:</label>
+                            <input type="text" id="comment-author" name="comment-author" required>
+
+                            <label for="comment-content">Комментарий:</label>
+                            <textarea id="comment-content" name="comment-content" rows="3" required></textarea>
+
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forum-form">
+            <h2>Добавить новое сообщение</h2>
+            <form action="#" method="post">
+                <label for="post-title">Тема:</label>
+                <input type="text" id="post-title" name="post-title" required>
+
+                <label for="post-author">Ваше имя:</label>
+                <input type="text" id="post-author" name="post-author" required>
+
+                <label for="post-content">Сообщение:</label>
+                <textarea id="post-content" name="post-content" rows="5" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

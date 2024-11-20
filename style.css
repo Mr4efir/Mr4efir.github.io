@@ -1,22 +1,21 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto; /* Включение вертикального скроллинга */
+    overflow-y: auto; 
     background-color: #313131;
     color: #333;
-    background-image: url('phon.jpg'); /* Фоновое изображение для всей страницы */
-    background-size: cover; /* Сохранение пропорций изображения */
-    background-position: center; /* Центрирование изображения */
-    background-attachment: fixed; /* Фиксированное положение фона */
+    background-image: url('phon.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
 }
 
 header {
     text-align: center;
     position: relative;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.7);
     color: #fff;
     padding: 20px 0;
 }
@@ -28,11 +27,10 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position: relative;
     z-index: 2;
 }
-
 nav li {
     margin: 0;
 }
@@ -162,17 +160,11 @@ nav li {
     outline: none;
 }
 
-.container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+
 
 .scroll {
     overflow: auto; /* Включение скроллинга */
+    width: 100%;
     height: auto;
     padding: 20px;
     border: solid 1px #ccc;
@@ -191,15 +183,6 @@ nav li {
     line-height: 1.6;
 }
 
-.image-container {
-    display: block;
-    margin: 0 auto 20px;
-    width: 600px; /* Увеличенная ширина */
-    height: 400px; /* Увеличенная высота */
-    background-size: cover; /* Сохранение пропорций изображения */
-    background-position: center; /* Центрирование изображения */
-    border-radius: 8px;
-}
 
 .spacer {
     height: 20px;
