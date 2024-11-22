@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум о Скандинавии</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-1">Домой</a></li>
+                <li><a href="myths.html" class="btn-1">Миры</a></li>
+                <li><a href="#about" class="btn-1">О нас</a></li>
+                <li><a href="culture.html" class="btn-1">Культура</a></li>
+                <li><a href="person.html" class="btn-1">Боги</a></li>
+                <li><a href="forum.php" class="btn-1">Форум</a></li>
+                <li><a href="#" class="btn-1" id="login-btn">Личный кабинет</a></li>
+            </ul>
+        </nav>
+        <div class="background-container">
+        </div>
+    </header>
+    <main>
+        <section id="forum">
+            <h1>Форум о Скандинавии</h1>
+            <div class="forum-topics">
+                <h2>Темы форума</h2>
+                <ul>
+                    <li>
+                        <h3>История викингов</h3>
+                        <p>Обсуждение истории викингов, их завоеваний и культуры.</p>
+                        <a href="topic1.html" class="btn-1">Перейти</a>
+                    </li>
+                    <li>
+                        <h3>Скандинавская мифология</h3>
+                        <p>Обсуждение богов, мифов и легенд скандинавской мифологии.</p>
+                        <a href="topic2.html" class="btn-1">Перейти</a>
+                    </li>
+                    <li>
+                        <h3>Современная Скандинавия</h3>
+                        <p>Обсуждение современной жизни и культуры в странах Скандинавии.</p>
+                        <a href="topic3.html" class="btn-1">Перейти</a>
+                    </li>
+                    <li>
+                        <h3>Языки и литература</h3>
+                        <p>Обсуждение скандинавских языков и литературы.</p>
+                        <a href="topic4.html" class="btn-1">Перейти</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно для авторизации -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Авторизация</h2>
+            <form id="login-form" action="login.php" method="post">
+                <label for="login-username">Имя пользователя:</label>
+                <input type="text" id="login-username" name="login-username" required>
+                <label for="login-password">Пароль:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                <button type="submit">Войти</button>
+            </form>
+            <p>Еще не зарегистрированы? <a href="#" id="register-link">Зарегистрироваться</a></p>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registration-form" action="register.php" method="post">
+                <label for="reg-username">Имя пользователя:</label>
+                <input type="text" id="reg-username" name="reg-username" required>
+                <label for="reg-password">Пароль:</label>
+                <input type="password" id="reg-password" name="reg-password" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <p>Уже зарегистрированы? <a href="#" id="login-link">Войти</a></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript для управления модальными окнами
+        document.getElementById('login-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-modal').style.display = 'block';
+        });
+
+        document.getElementById('register-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-modal').style.display = 'none';
+            document.getElementById('registration-modal').style.display = 'block';
+        });
+
+        document.getElementById('login-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('registration-modal').style.display = 'none';
+            document.getElementById('login-modal').style.display = 'block';
+        });
+
+        document.querySelectorAll('.modal .close').forEach(function(closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                document.querySelectorAll('.modal').forEach(function(modal) {
+                    modal.style.display = 'none';
+                });
+            });
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
