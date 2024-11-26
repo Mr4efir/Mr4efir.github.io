@@ -6,7 +6,7 @@ body {
     overflow-y: auto; /* Включение вертикального скроллинга */
     background-color: #313131;
     color: #333;
-    background-image: url('background.jpg'); /* Фоновое изображение для всей страницы */
+    background-image: url('phon.jpg'); /* Фоновое изображение для всей страницы */
     background-size: cover; /* Сохранение пропорций изображения */
     background-position: center; /* Центрирование изображения */
     background-attachment: fixed; /* Фиксированное положение фона */
@@ -172,7 +172,6 @@ nav li {
 
 .scroll {
     overflow: auto; /* Включение скроллинга */
-    width: 100%;
     height: auto;
     padding: 20px;
     border: solid 1px #ccc;
@@ -194,7 +193,7 @@ nav li {
 .image-container {
     display: block;
     margin: 0 auto 20px;
-    width:  550px; /* Увеличенная ширина */
+    width: 500px; /* Увеличенная ширина */
     height: 700px; /* Увеличенная высота */
     background-size: cover; /* Сохранение пропорций изображения */
     background-position: center; /* Центрирование изображения */
