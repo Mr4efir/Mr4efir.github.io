@@ -161,53 +161,10 @@ nav li {
     outline: none;
 }
 
-.container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.scroll {
-    overflow: auto; /* Включение скроллинга */
-    height: auto;
-    padding: 20px;
-    border: solid 1px #ccc;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.scroll h2 {
-    margin-bottom: 10px;
-}
-
-.scroll p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.image-container {
-    display: block;
-    margin: 0 auto 20px;
-    width: 600px; /* Увеличенная ширина */
-    height: 400px; /* Увеличенная высота */
-    background-size: cover; /* Сохранение пропорций изображения */
-    background-position: center; /* Центрирование изображения */
-    border-radius: 8px;
-}
-
-.spacer {
-    height: 20px;
-}
-
 .background-container {
     position: relative;
     height: 100vh;
-    background-image: url('phon.jpg');
+    background-image: url('phon.jpg'); /* Замените на ваш фон */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -215,173 +172,16 @@ nav li {
     align-items: center;
 }
 
-.forum-topics {
-    background-color: #fff;
+.forum-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.forum-topics ul {
-    list-style: none;
-    padding: 0;
-}
-
-.forum-topics ul li {
-    background-color: #f9f9f9;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.forum-topics ul li h3 {
-    margin: 0;
-}
-
-.forum-topics ul li p {
-    margin: 10px 0;
-}
-
-.forum-topics ul li a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.forum-topics ul li a:hover {
-    background-color: #555;
-}
-
-.new-topic {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.new-topic label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.new-topic input, .new-topic textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.new-topic button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.new-topic button:hover {
-    background-color: #555;
-}
-
-#registration {
-    position: fixed;
-    top: 500px;
-    right: 500px;
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон для формы регистрации */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-#registration h2 {
-    margin-bottom: 10px;
-}
-
-#registration form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#registration form input {
-    width: 70%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#registration form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#registration form button:hover {
-    background-color: #555;
-}
-
-#login {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-#login h2 {
-    margin-bottom: 10px;
-}
-
-#login form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#login form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#login form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#login form button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Добавленные стили для форума */
 .forum-posts {
     margin-bottom: 20px;
 }
