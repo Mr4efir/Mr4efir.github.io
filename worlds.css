@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -172,7 +173,6 @@ nav li {
 
 .scroll {
     overflow: auto; /* Включение скроллинга */
-    width: 100%;
     height: auto;
     padding: 20px;
     border: solid 1px #ccc;
