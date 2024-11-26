@@ -20,28 +20,27 @@
             </ul>
         </nav>
     </header>
-<div class="background-container">
-    <div class="forum-container">
-        <h1>Форум</h1>
+    <div class="background-container">
+        <div class="forum-container">
+            <h1>Форум</h1>
+            <div class="forum-posts">
+                <!-- Здесь будут отображаться сообщения форума -->
+            </div>
+            <div class="forum-form">
+                <h2>Добавить новое сообщение</h2>
+                <form action="add_topic.php" method="post">
+                    <label for="post-title">Тема:</label>
+                    <input type="text" id="post-title" name="post-title" required>
 
-        <div class="forum-posts">
+                    <label for="post-author">Ваше имя:</label>
+                    <input type="text" id="post-author" name="post-author" required>
 
-        </div>
+                    <label for="post-content">Сообщение:</label>
+                    <textarea id="post-content" name="post-content" rows="5" required></textarea>
 
-        <div class="forum-form">
-            <h2>Добавить новое сообщение</h2>
-            <form action="add_topic.php" method="post">
-                <label for="post-title">Тема:</label>
-                <input type="text" id="post-title" name="post-title" required>
-
-                <label for="post-author">Ваше имя:</label>
-                <input type="text" id="post-author" name="post-author" required>
-
-                <label for="post-content">Сообщение:</label>
-                <textarea id="post-content" name="post-content" rows="5" required></textarea>
-
-                <button type="submit">Отправить</button>
-            </form>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
