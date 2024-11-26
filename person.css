@@ -195,7 +195,7 @@ nav li {
     display: block;
     margin: 0 auto 20px;
     width:  600px; /* Увеличенная ширина */
-    height: 600px; /* Увеличенная высота */
+    height: 700px; /* Увеличенная высота */
     background-size: cover; /* Сохранение пропорций изображения */
     background-position: center; /* Центрирование изображения */
     border-radius: 8px;
