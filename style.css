@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto; 
+    overflow-y: auto;
     background-color: #313131;
     color: #333;
-    background-image: url('phon.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
+    background-image: url('phon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -31,6 +31,7 @@ nav ul {
     position: relative;
     z-index: 2;
 }
+
 nav li {
     margin: 0;
 }
@@ -160,8 +161,6 @@ nav li {
     outline: none;
 }
 
-
-
 .scroll {
     overflow: auto; /* Включение скроллинга */
     width: 100%;
@@ -183,10 +182,10 @@ nav li {
     line-height: 1.6;
 }
 
-
 .spacer {
     height: 20px;
 }
+
 .background-container {
     position: relative;
     height: 100vh;
@@ -194,11 +193,15 @@ nav li {
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
 .centered-text {
     margin-bottom: 20px;
+    color: #fff; /* Цвет текста для контраста с фоном */
 }
 
 .image-container img {
