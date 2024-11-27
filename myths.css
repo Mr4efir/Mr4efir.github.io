@@ -1,1 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Включение вертикального скроллинга */
+    background-color: #313131;
+    color: #333;
+    background-image: url('phon.jpg'); /* Фоновое изображение для всей страницы */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
+    background-attachment: fixed; /* Фиксированное положение фона */
+}
 
+header {
+    text-align: center;
+    position: relative;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+nav li {
+    margin: 0;
+}
+
+.btn-1 {
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Marvel, sans-serif;
+    font-size: 20pt;
+    width: 200px;
+    height: 45px;
+    position: relative;
+    border: solid #777 2px;
+    color: #777;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    line-height: 45px;
+}
+
+.btn-1 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-1:before, .btn-1:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #838181;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-1:before {
+    height: 0%;
+    width: 2px;
+    top: 50%;
+}
+
+.btn-1:after {
+    width: 0%;
+    height: 2px;
+    left: 50%;
+}
+
+.btn-1:hover:before {
+    height: 100%;
+    top: 0%;
+    background: #838181;
+}
+
+.btn-1:hover:after {
+    width: 100%;
+    left: 0%;
+    background: #838181;
+}
+
+.btn-1:hover {
+    background: transparent;
+    border-color: transparent;
+}
+
+.btn-1 span:hover {
+    color: #838181;
+}
+
+.btn-1 span:before, .btn-1 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #333;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-1 span:before {
+    width: 2px;
+    height: 0%;
+    top: 50%;
+}
+
+.btn-1 span:after {
+    height: 2px;
+    width: 0%;
+    left: 50%;
+}
+
+.btn-1 span:hover:before {
+    height: 41px;
+    top: 0%;
+    background: #838181;
+}
+
+.btn-1 span:hover:after {
+    width: 100%;
+    left: 0%;
+    background: #838181;
+}
+
+.btn-1:active {
+    background-color: #00a7fc;
+    border-color: #00a7fc;
+}
+
+.btn-1:active:before, .btn-1:active:after {
+    background-color: #00a7fc;
+}
+
+.btn-1 span:active {
+    color: #333;
+}
+
+.btn-1 span:active:before, .btn-1 span:active:after {
+    background-color: #00a7fc;
+}
+
+.btn-1:focus {
+    outline: none;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll {
+    overflow: auto; /* Включение скроллинга */
+    height: auto;
+    padding: 20px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll h2 {
+    margin-bottom: 10px;
+}
+
+.scroll p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.image-container {
+    display: block;
+    margin: 0 auto 20px;
+    width: 600px; /* Увеличенная ширина */
+    height: 400px; /* Увеличенная высота */
+    background-size: cover; /* Сохранение пропорций изображения */
+    background-position: center; /* Центрирование изображения */
+    border-radius: 8px;
+}
+
+.spacer {
+    height: 20px;
+}
+.background-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('phon.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
