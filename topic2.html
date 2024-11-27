@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум</title>
+    <link rel="stylesheet" href="topic2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn-1">Домой</a></li>
+                <li><a href="culture.html" class="btn-1">Культура</a></li>
+                <li><a href="worlds.html" class="btn-1">Миры</a></li>
+                <li><a href="person.html" class="btn-1">Боги</a></li>
+                <li><a href="myths.html" class="btn-1">Мифы</a></li>
+                <li><a href="forum.html" class="btn-1">Форум</a></li>
+                <li><a href="#about" class="btn-1">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background-container">
+        <div class="forum-container">
+            <h1>Форум</h1>
+            <div class="forum-posts">
+                <!-- Здесь будут отображаться сообщения форума -->
+            </div>
+            <div class="forum-form">
+                <h2>Добавить новое сообщение</h2>
+                <form action="add_topic.php" method="post">
+                    <label for="post-title">Тема:</label>
+                    <input type="text" id="post-title" name="post-title" required>
+
+                    <label for="post-author">Ваше имя:</label>
+                    <input type="text" id="post-author" name="post-author" required>
+
+                    <label for="post-content">Сообщение:</label>
+                    <textarea id="post-content" name="post-content" rows="5" required></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
